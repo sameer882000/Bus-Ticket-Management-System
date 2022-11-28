@@ -87,7 +87,7 @@ public class book extends HttpServlet {
           			showS1T1 m = new showS1T1(name, genere, duration, director);
           			m.booked=booked;
           			if(!m.bookNew(number)){
-          				htmlRespone += "<center><h2>Show Full</h2><br/></center>"; 
+          				htmlRespone += "<center><h2>All Bus Seats Booked</h2><br/></center>"; 
           			}
           			else{
           				htmlRespone += "<center><div style='border:1px solid black; border-radius:3px; width:400px;'><h2>Tickets Booked</h2><hr><br/><h3>Please pay Rs." + cost + "</h3><br><hr><p>order: "+ number+" x " +clss+" tickets<br>Journey: "+name+"- ("+duration+" minutes)</p><h2>Bus Number: "+screen+"</h2><br></div></center>"; 
@@ -101,7 +101,7 @@ public class book extends HttpServlet {
           				showS1T2 m=new showS1T2(name, genere, duration, director);
           				m.booked=booked;
           				if(!m.bookNew(number)){
-              				htmlRespone += "<center><h2>Show Full</h2><br/></center>"; 
+              				htmlRespone += "<center><h2>All Bus Seats Booked</h2><br/></center>"; 
               			}
               			else{
               				htmlRespone += "<center><div style='border:1px solid black; border-radius:3px; width:400px;'><h2>Tickets Booked</h2><hr><br/><h3>Please pay Rs." + cost + "</h3><br><hr><p>order: "+ number+" x " +clss+" tickets<br>Journey: "+name+"- ("+duration+" minutes)</p><h2>Bus Number: "+screen+"</h2></div></center>"; 
@@ -115,7 +115,7 @@ public class book extends HttpServlet {
           				showS1T3 m=new showS1T3(name, genere, duration, director);
           				m.booked=booked;
           				if(!m.bookNew(number)){
-              				htmlRespone += "<center><h2>Show Full</h2><br/></center>"; 
+              				htmlRespone += "<center><h2>All Bus Seats Booked</h2><br/></center>"; 
               			}
               			else{
               				htmlRespone += "<center><div style='border:1px solid black; border-radius:3px; width:400px;'><h2>Tickets Booked</h2><hr><br/><h3>Please pay Rs." + cost + "</h3><br><hr><p>order: "+ number+" x " +clss+" tickets<br>Journey: "+name+"- ("+duration+" minutes)</p><h2>Bus Number: "+screen+"</h2><br></div></center>"; 
@@ -131,7 +131,7 @@ public class book extends HttpServlet {
           		showS2T1 m=new showS2T1(name, genere, duration, director);
           		m.booked=booked;
           		if(!m.bookNew(number)){
-      				htmlRespone += "<center><h2>Show Full</h2><br/></center>"; 
+      				htmlRespone += "<center><h2>All Bus Seats Booked</h2><br/></center>"; 
       			}
       			else{
       				htmlRespone += "<center><div style='border:1px solid black; border-radius:3px; width:400px;'><h2>Tickets Booked</h2><hr><br/><h3>Please pay Rs." + cost + "</h3><br><hr><p>order: "+ number+" x " +clss+" tickets<br>Journey: "+name+"- ("+duration+" minutes)</p><h2>Bus Number: "+screen+"</h2><br></div></center>"; 
@@ -145,7 +145,7 @@ public class book extends HttpServlet {
   						showS2T2 m=new showS2T2(name, genere, duration, director);
   						m.booked=booked;
   						if(!m.bookNew(number)){
-  	          				htmlRespone += "<center><h2>Show Full</h2><br/></center>"; 
+  	          				htmlRespone += "<center><h2>All Bus Seats Booked</h2><br/></center>"; 
   	          			}
   	          			else{
   	          				htmlRespone += "<center><div style='border:1px solid black; border-radius:3px; width:400px;'><h2>Tickets Booked</h2><hr><br/><h3>Please pay Rs." + cost + "</h3><br><hr><p>order: "+ number+" x " +clss+" tickets<br>Journey: "+name+"- ("+duration+" minutes)</p><h2>Bus Number: "+screen+"</h2><br></div></center>"; 
@@ -159,13 +159,13 @@ public class book extends HttpServlet {
   						showS2T3 m=new showS2T3(name, genere, duration, director);
   						m.booked=booked;
   						if(!m.bookNew(number)){
-  	          				htmlRespone += "<center><h2>Show Full</h2><br/></center>"; 
+  	          				htmlRespone += "<center><h2>All Bus Seats Booked</h2><br/></center>"; 
   	          			}
   	          			else{
   	          				htmlRespone += "<center><div style='border:1px solid black; border-radius:3px; width:400px;'>"
   	          						+ "<h2>Tickets Booked</h2><hr><br/><h3>Please pay Rs." + cost + "</h3><br>"
-  	          								+ "<hr><p>order: "+ number+" x " +clss+" tickets<br>Movie: "+name+"- ("+duration+" minutes)</p>"
-  	          										+ "<h2>Screen: "+screen+"</h2><br><h2>Slot: "+slot+"</h2></div></center>"; 
+  	          								+ "<hr><p>order: "+ number+" x " +clss+" tickets<br>Journey: "+name+"- ("+duration+" minutes)</p>"
+  	          										+ "<h2>Bus Number: "+screen+"</h2><br></div></center>"; 
   	  	          		query = " update shows set booked="+m.booked+" where id="+showId;
   	  	          	System.out.println(query);
   	  	          	PreparedStatement preparedStmt = conn.prepareStatement(query);
@@ -178,13 +178,13 @@ public class book extends HttpServlet {
           		showS3T1 m=new showS3T1(name, genere, duration, director);
           		m.booked=booked;
           		if(!m.bookNew(number)){
-      				htmlRespone += "<center><h2>Show Full</h2><br/></center>"; 
+      				htmlRespone += "<center><h2>All Bus Seats Booked</h2><br/></center>"; 
       			}
       			else{
       				htmlRespone += "<center><div style='border:1px solid black; border-radius:3px; width:400px;'>"
       						+ "<h2>Tickets Booked</h2><hr><br/><h3>Please pay Rs." + cost + "</h3><br>"
-      								+ "<hr><p>order: "+ number+" x " +clss+" tickets<br>Movie: "+name+"- ("+duration+" minutes)</p>"
-      										+ "<h2>Screen: "+screen+"</h2><br><h2>Slot: "+slot+"</h2></div></center>"; 
+      								+ "<hr><p>order: "+ number+" x " +clss+" tickets<br>Journey: "+name+"- ("+duration+" minutes)</p>"
+      										+ "<h2>Bus Number: "+screen+"</h2><br></div></center>"; 
 	          			query = " update shows set booked="+m.booked+" where id="+showId;
 	          			System.out.println(query);
 	          			PreparedStatement preparedStmt = conn.prepareStatement(query);
@@ -195,12 +195,12 @@ public class book extends HttpServlet {
   						showS3T2 m=new showS3T2(name, genere, duration, director);
   						m.booked=booked;
   						if(!m.bookNew(number)){
-  	          				htmlRespone += "<center><h2>Show Full</h2><br/></center>"; 
+  	          				htmlRespone += "<center><h2>All Bus Seats Booked</h2><br/></center>"; 
   	          			}
   	          			else{
   	          				htmlRespone += "<center><div style='border:1px solid black; border-radius:3px; width:400px;'>"
   	          						+ "<h2>Tickets Booked</h2><hr><br/><h3>Please pay Rs." + cost + "</h3><br><hr><p>order: "+ number+" x " 
-  	          						+clss+" tickets<br>Movie: "+name+"- ("+duration+" minutes)</p><h2>Screen: "+screen+"</h2><br>"
+  	          						+clss+" tickets<br>Journey: "+name+"- ("+duration+" minutes)</p><h2>Bus Number: "+screen+"</h2><br>"
   	          								+ "<h2>Slot: "+slot+"</h2></div></center>"; 
   	  	          		query = " update shows set booked="+m.booked+" where id="+showId;
   	  	          	System.out.println(query);
@@ -212,13 +212,13 @@ public class book extends HttpServlet {
   						showS3T3 m=new showS3T3(name, genere, duration, director);
   						m.booked=booked;
   						if(!m.bookNew(number)){
-  	          				htmlRespone += "<center><h2>Show Full</h2><br/></center>"; 
+  	          				htmlRespone += "<center><h2>All Bus Seats Booked </h2><br/></center>"; 
   	          			}
   	          			else{
   	          				htmlRespone += "<center><div style='border:1px solid black; border-radius:3px; width:400px;'>"
   	          						+ "<h2>Tickets Booked</h2><hr><br/><h3>Please pay Rs." + cost +
-  	          						"</h3><br><hr><p>order: "+ number+" x " +clss+" tickets<br>Movie: "+name+"- ("+duration+" minutes)</p>"
-  	          								+ "<h2>Screen: "+screen+"</h2><br><h2>Slot: "+slot+"</h2></div></center>"; 
+  	          						"</h3><br><hr><p>order: "+ number+" x " +clss+" tickets<br>Journey: "+name+"- ("+duration+" minutes)</p>"
+  	          								+ "<h2>Bus Number: "+screen+"</h2><br></div></center>"; 
   	          		query = " update shows set booked="+m.booked+" where id="+showId;
   	          		System.out.println(query);
   	          	PreparedStatement preparedStmt = conn.prepareStatement(query);
@@ -230,13 +230,13 @@ public class book extends HttpServlet {
           		showS4T1 m=new showS4T1(name, genere, duration, director);
           		m.booked=booked;
           		if(!m.bookNew(number)){
-      				htmlRespone += "<center><h2>Show Full</h2><br/></center>"; 
+      				htmlRespone += "<center><h2>All Bus Seats Booked</h2><br/></center>"; 
       			}
       			else{
       				htmlRespone += "<center><div style='border:1px solid black; border-radius:3px; width:400px;'>"
       						+ "<h2>Tickets Booked</h2><hr><br/><h3>Please pay Rs." + cost + "</h3><br>"
-      								+ "<hr><p>order: "+ number+" x " +clss+" tickets<br>Movie: "+name+"- ("+duration+" minutes)</p>"
-      										+ "<h2>Screen: "+screen+"</h2><br><h2>Slot: "+slot+"</h2></div></center>"; 
+      								+ "<hr><p>order: "+ number+" x " +clss+" tickets<br>Journey: "+name+"- ("+duration+" minutes)</p>"
+      										+ "<h2>Bus Number: "+screen+"</h2><br></div></center>"; 
 	          			query = " update shows set booked="+m.booked+" where id="+showId;
 	          			System.out.println(query);
 	          			PreparedStatement preparedStmt = conn.prepareStatement(query);
@@ -247,13 +247,13 @@ public class book extends HttpServlet {
   						showS4T2 m=new showS4T2(name, genere, duration, director);
   						m.booked=booked;
   						if(!m.bookNew(number)){
-  	          				htmlRespone += "<center><h2>Show Full</h2><br/></center>"; 
+  	          				htmlRespone += "<center><h2>All Bus Seats Booked</h2><br/></center>"; 
   	          			}
   	          			else{
   	          				htmlRespone += "<center><div style='border:1px solid black; border-radius:3px; width:400px;'>"
   	          						+ "<h2>Tickets Booked</h2><hr><br/><h3>Please pay Rs." + cost + "</h3><br><hr><p>order: "+ number+" x " 
-  	          						+clss+" tickets<br>Movie: "+name+"- ("+duration+" minutes)</p><h2>Screen: "+screen+"</h2><br>"
-  	          								+ "<h2>Slot: "+slot+"</h2></div></center>"; 
+  	          						+clss+" tickets<br>JoURNEY: "+name+"- ("+duration+" minutes)</p><h2>Bus Number: "+screen+"</h2><br>"
+  	          								+ "</div></center>"; 
   	  	          		query = " update shows set booked="+m.booked+" where id="+showId;
   	  	          	System.out.println(query);
   	  	          	PreparedStatement preparedStmt = conn.prepareStatement(query);
@@ -264,13 +264,13 @@ public class book extends HttpServlet {
   						showS4T3 m=new showS4T3(name, genere, duration, director);
   						m.booked=booked;
   						if(!m.bookNew(number)){
-  	          				htmlRespone += "<center><h2>Show Full</h2><br/></center>"; 
+  	          				htmlRespone += "<center><h2>All Bus Seats Booked</h2><br/></center>"; 
   	          			}
   	          			else{
   	          				htmlRespone += "<center><div style='border:1px solid black; border-radius:3px; width:400px;'>"
   	          						+ "<h2>Tickets Booked</h2><hr><br/><h3>Please pay Rs." + cost +
-  	          						"</h3><br><hr><p>order: "+ number+" x " +clss+" tickets<br>Movie: "+name+"- ("+duration+" minutes)</p>"
-  	          								+ "<h2>Screen: "+screen+"</h2><br><h2>Slot: "+slot+"</h2></div></center>"; 
+  	          						"</h3><br><hr><p>order: "+ number+" x " +clss+" tickets<br>Journey: "+name+"- ("+duration+" minutes)</p>"
+  	          								+ "<h2>Bus Number: "+screen+"</h2><br></div></center>"; 
   	          		query = " update shows set booked="+m.booked+" where id="+showId;
   	          		System.out.println(query);
   	          	PreparedStatement preparedStmt = conn.prepareStatement(query);
@@ -282,13 +282,13 @@ public class book extends HttpServlet {
           		showS5T1 m=new showS5T1(name, genere, duration, director);
           		m.booked=booked;
           		if(!m.bookNew(number)){
-      				htmlRespone += "<center><h2>Show Full</h2><br/></center>"; 
+      				htmlRespone += "<center><h2>All Bus Seats Booked</h2><br/></center>"; 
       			}
       			else{
       				htmlRespone += "<center><div style='border:1px solid black; border-radius:3px; width:400px;'>"
       						+ "<h2>Tickets Booked</h2><hr><br/><h3>Please pay Rs." + cost + "</h3><br>"
-      								+ "<hr><p>order: "+ number+" x " +clss+" tickets<br>Movie: "+name+"- ("+duration+" minutes)</p>"
-      										+ "<h2>Screen: "+screen+"</h2><br><h2>Slot: "+slot+"</h2></div></center>"; 
+      								+ "<hr><p>order: "+ number+" x " +clss+" tickets<br>Journey: "+name+"- ("+duration+" minutes)</p>"
+      										+ "<h2>Bus Number: "+screen+"</h2><br>></div></center>"; 
 	          			query = " update shows set booked="+m.booked+" where id="+showId;
 	          			System.out.println(query);
 	          			PreparedStatement preparedStmt = conn.prepareStatement(query);
@@ -299,13 +299,13 @@ public class book extends HttpServlet {
   						showS5T2 m=new showS5T2(name, genere, duration, director);
   						m.booked=booked;
   						if(!m.bookNew(number)){
-  	          				htmlRespone += "<center><h2>Show Full</h2><br/></center>"; 
+  	          				htmlRespone += "<center><h2>All Bus Seats Booked</h2><br/></center>"; 
   	          			}
   	          			else{
   	          				htmlRespone += "<center><div style='border:1px solid black; border-radius:3px; width:400px;'>"
   	          						+ "<h2>Tickets Booked</h2><hr><br/><h3>Please pay Rs." + cost + "</h3><br><hr><p>order: "+ number+" x " 
-  	          						+clss+" tickets<br>Movie: "+name+"- ("+duration+" minutes)</p><h2>Screen: "+screen+"</h2><br>"
-  	          								+ "<h2>Slot: "+slot+"</h2></div></center>"; 
+  	          						+clss+" tickets<br>Journey: "+name+"- ("+duration+" minutes)</p><h2>Bus Number: "+screen+"</h2><br>"
+  	          								+ "</div></center>"; 
   	  	          		query = " update shows set booked="+m.booked+" where id="+showId;
   	  	          	System.out.println(query);
   	  	          	PreparedStatement preparedStmt = conn.prepareStatement(query);
@@ -316,13 +316,13 @@ public class book extends HttpServlet {
   						showS5T3 m=new showS5T3(name, genere, duration, director);
   						m.booked=booked;
   						if(!m.bookNew(number)){
-  	          				htmlRespone += "<center><h2>Show Full</h2><br/></center>"; 
+  	          				htmlRespone += "<center><h2>All Bus Seats Booked</h2><br/></center>"; 
   	          			}
   	          			else{
   	          				htmlRespone += "<center><div style='border:1px solid black; border-radius:3px; width:400px;'>"
   	          						+ "<h2>Tickets Booked</h2><hr><br/><h3>Please pay Rs." + cost +
-  	          						"</h3><br><hr><p>order: "+ number+" x " +clss+" tickets<br>Movie: "+name+"- ("+duration+" minutes)</p>"
-  	          								+ "<h2>Screen: "+screen+"</h2><br><h2>Slot: "+slot+"</h2></div></center>"; 
+  	          						"</h3><br><hr><p>order: "+ number+" x " +clss+" tickets<br>Journey: "+name+"- ("+duration+" minutes)</p>"
+  	          								+ "<h2>Bus Number: "+screen+"</h2><br></div></center>"; 
   	          		query = " update shows set booked="+m.booked+" where id="+showId;
   	          		System.out.println(query);
   	          	PreparedStatement preparedStmt = conn.prepareStatement(query);
