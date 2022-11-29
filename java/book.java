@@ -84,7 +84,7 @@ public class book extends HttpServlet {
           	case 1:
           		showS1 m1=new showS1(name, busno, duration, seats);
           		m1.seats=seats;
-          		if(!m1.bookNew(number) || m1.seats == 0){
+          		if(!m1.bookNew(number) || m1.seats == 0 || m1.seats<number){
       				htmlRespone += "<body style='background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);'>"
       						+ "<h2 style='left: 0; line-height: 200px; margin-top: -100px; margin-left: 450px;"
       						+ " position: absolute; top: 50%; width: 100%;'>All Bus Seats Booked Or Invalid entry</h2></body>"; 
@@ -109,7 +109,7 @@ public class book extends HttpServlet {
           	case 2:
           		showS2 m2=new showS2(name, busno, duration, seats);
           		m2.seats=seats;
-          		if(!m2.bookNew(number) || m2.seats == 0){
+          		if(!m2.bookNew(number) || m2.seats == 0 || m2.seats<number){
           			htmlRespone += "<body style='background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);'>"
       						+ "<h2 style='left: 0; line-height: 200px; margin-top: -100px; margin-left: 450px;"
       						+ " position: absolute; top: 50%; width: 100%;'>All Bus Seats Booked Or Invalid entry</h2></body>"; 
@@ -132,7 +132,7 @@ public class book extends HttpServlet {
           	case 3:
           		showS3 m3=new showS3(name, busno, duration, seats);
           		m3.seats=seats;
-          		if(!m3.bookNew(number) || m3.seats == 0){
+          		if(!m3.bookNew(number) || m3.seats == 0 || m3.seats<number){
           			htmlRespone += "<body style='background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);'>"
       						+ "<h2 style='left: 0; line-height: 200px; margin-top: -100px; margin-left: 450px;"
       						+ " position: absolute; top: 50%; width: 100%;'>All Bus Seats Booked Or Invalid entry</h2></body>"; 
@@ -155,7 +155,7 @@ public class book extends HttpServlet {
           	case 4:
           		showS4 m4=new showS4(name, busno, duration, seats);
           		m4.seats=seats;
-          		if(!m4.bookNew(number) || m4.seats == 0){
+          		if(!m4.bookNew(number) || m4.seats == 0 || m4.seats<number){
           			htmlRespone += "<body style='background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);'>"
       						+ "<h2 style='left: 0; line-height: 200px; margin-top: -100px; margin-left: 450px;"
       						+ " position: absolute; top: 50%; width: 100%;'>All Bus Seats Booked Or Invalid entry</h2></body>"; 
@@ -178,7 +178,7 @@ public class book extends HttpServlet {
           	case 5:
           		showS5 m5=new showS5(name, busno, duration, seats);
           		m5.seats=seats;
-          		if(!m5.bookNew(number) || m5.seats == 0){
+          		if(!m5.bookNew(number) || m5.seats == 0 || m5.seats<number){
           			htmlRespone += "<body style='background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);'>"
       						+ "<h2 style='left: 0; line-height: 200px; margin-top: -100px; margin-left: 450px;"
       						+ " position: absolute; top: 50%; width: 100%;'>All Bus Seats Booked Or Invalid entry</h2></body>"; 
